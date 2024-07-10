@@ -22,7 +22,7 @@
       <table>
         <thead>
           <tr>
-            <th style="width: 15%"><span class="responsive_show:desktop">MOD | </span>Type</th>
+            <th style="width: 15%"><span class="responsive_show:desktop">MOD<!-- | --></span><!-- Type --> </th>
             <th style="width: 28%" class="text:left">Date/Time</th>
 			<th style="width: 28%" class="text:left">Name</th>
             <th style="width: 28%">Length</th>
@@ -32,7 +32,7 @@
           {foreach from=$players_banned item="player"}
             <tr class="collapse" onclick="{$player.link_url}">
               <td class="text:center">
-                <img src="images/games/{$player.icon}" alt="{$player.icon}" title="MOD" border="0" align="absmiddle"/>&nbsp;<i class="responsive_show:desktop fas fa-ban fa-lg"></i>
+                <img src="images/games/{$player.icon}" alt="{$player.icon}" title="MOD"  style="width:26px;height:26px;" border="0" align="absmiddle"/><!-- &nbsp;<i class="responsive_show:desktop fas fa-ban fa-lg"></i> -->
               </td>
               <td>
                 {$player.created}
@@ -68,7 +68,7 @@
         <table>
           <thead>
             <tr>
-              <th><span class="responsive_show:desktop">MOD | </span>Type</th>
+              <th><!-- <span class="responsive_show:desktop">MOD | </span>-->Type</th>
 			  <th class="text:left">Date/Time</th>
               <th class="text:left">Name</th>
               <th>Length</th>
@@ -78,7 +78,7 @@
             {foreach from=$players_commed item="player"}
               <tr class="collapse" onclick="{$player.link_url}">
                 <td class="text:center">
-                  <img src="images/games/{$player.icon}" alt="{$player.icon}" title="MOD" border="0" align="absmiddle"/>&nbsp;<i class="responsive_show:desktop {$player.type}"></i>
+                  <!-- <img src="images/games/{$player.icon}" alt="{$player.icon}" title="MOD" border="0" align="absmiddle"/>&nbsp; --><i class="responsive_show:desktop {$player.type}"></i>
                 </td>
                 <td>
                   {$player.created}
