@@ -32,7 +32,7 @@
           {foreach from=$players_banned item="player"}
             <tr class="collapse" onclick="{$player.link_url}">
               <td class="text:center">
-                <img src="images/games/{$player.icon}" alt="{$player.icon}" title="MOD"  style="width:26px;height:26px;" border="0" align="absmiddle"/><!-- &nbsp;<i class="responsive_show:desktop fas fa-ban fa-lg"></i> -->
+          <img src="images/games/{$player.icon}" alt="{$player.icon}" title="{if $player.icon=="web.png"}Web Ban{else}In Game Ban{/if}" style="width:26px;height:26px;" border="0" align="absmiddle"/><!-- &nbsp;<i class="responsive_show:desktop fas fa-ban fa-lg"></i> -->
               </td>
               <td>
                 {$player.created}
